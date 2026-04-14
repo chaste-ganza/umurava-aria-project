@@ -21,10 +21,15 @@ export default function JobsPage() {
       </header>
 
       <div className="jobs-actions">
-        <button className="btn btn-secondary">
-          Sort by Status <ArrowDown size={14} />
-        </button>
-        <button className="btn btn-primary create-job-btn">
+        <div style={{ display: 'flex', gap: '1rem' }}>
+          <button className="btn btn-primary">
+            Sort by Name <ArrowDown size={14} />
+          </button>
+          <button className="btn btn-primary">
+            Sort by Status <ArrowDown size={14} />
+          </button>
+        </div>
+        <button className="btn btn-secondary create-job-btn">
           Create new job
         </button>
       </div>
@@ -37,7 +42,9 @@ export default function JobsPage() {
                 Javascript <br/>
                 Senior developer
               </h3>
-              <span className="status-badge-solid">{job.status}</span>
+              <span className={idx === 2 || idx === 4 ? "status-badge-draft" : "status-badge-active"}>
+                 {idx === 2 || idx === 4 ? "Draft" : "Active"}
+              </span>
             </div>
 
             <div className="job-meta">

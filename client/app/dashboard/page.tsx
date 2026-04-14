@@ -66,7 +66,7 @@ export default function DashboardPage() {
           <div className="chart-placeholder line-chart-placeholder">
               {/* Line chart SVG drawing placeholder */}
               <svg width="100%" height="150" viewBox="0 0 300 100" preserveAspectRatio="none">
-                  <path d="M 10 90 Q 40 90, 60 70 T 120 70 T 160 30 T 220 50 T 290 10" fill="none" stroke="var(--border-strong)" strokeWidth="2" />
+                  <path d="M 10 90 Q 40 90, 60 70 T 120 70 T 160 30 T 220 50 T 290 10" fill="none" stroke="var(--accent-color)" strokeWidth="3" />
               </svg>
           </div>
         </div>

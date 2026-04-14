@@ -31,7 +31,10 @@ export default function JobApplicantsPage() {
         <div className="applicants-main surface">
           <div className="applicants-actions">
             <input type="text" className="input-field search-input-large" placeholder="Search" />
-            <button className="btn btn-secondary">Upload files</button>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <button className="btn btn-primary">Upload files</button>
+              <button className="btn btn-primary">View job</button>
+            </div>
           </div>
 
           <h2 className="text-h2 applicants-title">Job applicants</h2>
@@ -59,7 +62,7 @@ export default function JobApplicantsPage() {
             </table>
           </div>
 
-          <button className="btn btn-secondary screen-btn w-full">
+          <button className="btn btn-primary screen-btn w-full">
             Screen candidates
           </button>
         </div>
@@ -73,7 +76,7 @@ export default function JobApplicantsPage() {
               <div className="session-card" key={idx}>
                 <div className="session-header">
                   <span className="session-date">{session.date}</span>
-                  <span className={`status-badge-solid status-${session.status.toLowerCase()}`}>
+                  <span className={session.status === 'Pending' ? 'status-badge-draft' : 'status-badge-active'}>
                     {session.status}
                   </span>
                 </div>
@@ -85,7 +88,7 @@ export default function JobApplicantsPage() {
                     <span className="icon">⭐</span> Top score: {session.score}
                   </div>
                 </div>
-                <button className="btn btn-secondary w-full">View results</button>
+                <button className="btn btn-primary w-full" style={{ marginTop: '1rem' }}>View results</button>
               </div>
             ))}
           </div>

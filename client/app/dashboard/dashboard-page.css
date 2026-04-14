@@ -51,9 +51,10 @@
 
 /* Table */
 .table-container {
-  background-color: var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: var(--surface-default);
+  border-radius: var(--radius-lg);
   overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .jobs-table {
@@ -65,8 +66,9 @@
 .jobs-table th {
   padding: 1rem;
   font-size: 0.75rem;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--border-strong);
+  color: var(--accent-text);
+  background-color: var(--accent-color);
+  font-weight: 500;
 }
 
 .jobs-table td {
@@ -103,9 +105,10 @@
 }
 
 .chart-card {
-  background-color: var(--border-subtle);
-  border-radius: var(--radius-md);
+  background-color: var(--surface-default);
+  border-radius: var(--radius-lg);
   padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .chart-title {
@@ -133,6 +136,8 @@
 
 .bar {
   flex: 1;
-  background-color: var(--border-strong);
+  background-color: var(--accent-color);
   min-width: 20px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  opacity: 0.8;
 }

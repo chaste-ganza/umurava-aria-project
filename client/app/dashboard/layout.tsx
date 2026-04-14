@@ -70,19 +70,17 @@ export default function DashboardLayout({
       {/* Sidebar */}
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-top">
-          <div className="org-profile">
-            <Avatar name="Umurava" />
-            <div className="org-info">
-              <span className="org-name">Organization name</span>
-              <span className="org-subtitle">Umurava screening system</span>
+          <div className="org-profile" style={{ backgroundColor: 'transparent', padding: '0', marginBottom: '2rem' }}>
+            <div className="aria-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <div style={{ width: '32px', height: '32px', backgroundColor: 'var(--accent-color)', borderRadius: '8px' }}></div>
+              <span style={{ color: 'white', fontWeight: 700, fontSize: '1.25rem', letterSpacing: '1px' }}>ARIA</span>
             </div>
           </div>
 
           <nav className="sidebar-nav">
-            <Link href="/dashboard" className={`nav-item ${isActive('/dashboard') ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Dashboard</Link>
-            <Link href="/dashboard/jobs" className={`nav-item ${isActive('/dashboard/jobs') ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Jobs</Link>
-            <Link href="#" className="nav-item">Shortlists</Link>
-            <Link href="#" className="nav-item">Admin</Link>
+            <Link href="/dashboard" className={`nav-item ${isActive('/dashboard') && pathname === '/dashboard' ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Dashboard</Link>
+            <Link href="/dashboard/jobs" className={`nav-item ${pathname.includes('/jobs') ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Jobs</Link>
+            <Link href="/dashboard/screenings" className={`nav-item ${pathname.includes('/screenings') ? 'active' : ''}`} onClick={() => setIsOpen(false)}>Screenings</Link>
           </nav>
         </div>
 
