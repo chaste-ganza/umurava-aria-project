@@ -7,12 +7,20 @@
 
 .sidebar {
   width: 260px;
+<<<<<<< HEAD
   background-color: var(--surface-dark);
   color: var(--text-inverse);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid var(--surface-dark);
+=======
+  background-color: var(--surface-default);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--border-subtle);
+>>>>>>> main
   padding: 1.5rem;
   transition: transform 0.3s ease;
 }
@@ -100,12 +108,20 @@
 .org-name, .admin-name {
   font-size: 0.875rem;
   font-weight: 600;
+<<<<<<< HEAD
   color: var(--text-inverse);
+=======
+  color: var(--text-primary);
+>>>>>>> main
 }
 
 .org-subtitle, .admin-email {
   font-size: 0.625rem;
+<<<<<<< HEAD
   color: var(--text-tertiary);
+=======
+  color: var(--text-secondary);
+>>>>>>> main
 }
 
 /* Navigation */
@@ -118,6 +134,7 @@
 .nav-item {
   padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
+<<<<<<< HEAD
   color: var(--text-tertiary);
   border-radius: var(--radius-button);
   transition: background-color 0.2s;
@@ -133,6 +150,20 @@
 .nav-item.active {
   background-color: var(--accent-color);
   color: var(--accent-text);
+=======
+  color: var(--text-secondary);
+  border-radius: var(--radius-button);
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: var(--surface-hover);
+}
+
+.nav-item.active {
+  background-color: var(--border-strong);
+  color: var(--text-primary);
+>>>>>>> main
   font-weight: 500;
 }
 

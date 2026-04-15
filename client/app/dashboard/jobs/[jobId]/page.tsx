@@ -31,10 +31,14 @@ export default function JobApplicantsPage() {
         <div className="applicants-main surface">
           <div className="applicants-actions">
             <input type="text" className="input-field search-input-large" placeholder="Search" />
+<<<<<<< HEAD
             <div style={{ display: 'flex', gap: '0.5rem' }}>
               <button className="btn btn-primary">Upload files</button>
               <button className="btn btn-primary">View job</button>
             </div>
+=======
+            <button className="btn btn-secondary">Upload files</button>
+>>>>>>> main
           </div>
 
           <h2 className="text-h2 applicants-title">Job applicants</h2>
@@ -62,7 +66,11 @@ export default function JobApplicantsPage() {
             </table>
           </div>
 
+<<<<<<< HEAD
           <button className="btn btn-primary screen-btn w-full">
+=======
+          <button className="btn btn-secondary screen-btn w-full">
+>>>>>>> main
             Screen candidates
           </button>
         </div>
@@ -76,7 +84,11 @@ export default function JobApplicantsPage() {
               <div className="session-card" key={idx}>
                 <div className="session-header">
                   <span className="session-date">{session.date}</span>
+<<<<<<< HEAD
                   <span className={session.status === 'Pending' ? 'status-badge-draft' : 'status-badge-active'}>
+=======
+                  <span className={`status-badge-solid status-${session.status.toLowerCase()}`}>
+>>>>>>> main
                     {session.status}
                   </span>
                 </div>
@@ -88,7 +100,11 @@ export default function JobApplicantsPage() {
                     <span className="icon">⭐</span> Top score: {session.score}
                   </div>
                 </div>
+<<<<<<< HEAD
                 <button className="btn btn-primary w-full" style={{ marginTop: '1rem' }}>View results</button>
+=======
+                <button className="btn btn-secondary w-full">View results</button>
+>>>>>>> main
               </div>
             ))}
           </div>

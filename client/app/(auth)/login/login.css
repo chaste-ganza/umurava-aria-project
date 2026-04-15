@@ -40,12 +40,20 @@
 
 .login-branding {
   flex: 0 0 50%;
+<<<<<<< HEAD
   background-color: var(--surface-dark);
+=======
+  background-color: #d4d4d4;
+>>>>>>> main
   border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
   display: flex;
   padding: 4rem;
 }
 
 .branding-text {
+<<<<<<< HEAD
   color: var(--text-inverse);
+=======
+  color: var(--text-primary);
+>>>>>>> main
 }

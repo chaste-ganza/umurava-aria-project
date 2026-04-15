@@ -51,10 +51,16 @@
 
 /* Table */
 .table-container {
+<<<<<<< HEAD
   background-color: var(--surface-default);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+=======
+  background-color: var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+>>>>>>> main
 }
 
 .jobs-table {
@@ -66,9 +72,14 @@
 .jobs-table th {
   padding: 1rem;
   font-size: 0.75rem;
+<<<<<<< HEAD
   color: var(--accent-text);
   background-color: var(--accent-color);
   font-weight: 500;
+=======
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-strong);
+>>>>>>> main
 }
 
 .jobs-table td {
@@ -105,10 +116,16 @@
 }
 
 .chart-card {
+<<<<<<< HEAD
   background-color: var(--surface-default);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   box-shadow: var(--shadow-sm);
+=======
+  background-color: var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+>>>>>>> main
 }
 
 .chart-title {
@@ -136,8 +153,13 @@
 
 .bar {
   flex: 1;
+<<<<<<< HEAD
   background-color: var(--accent-color);
   min-width: 20px;
   border-radius: var(--radius-sm) var(--radius-sm) 0 0;
   opacity: 0.8;
+=======
+  background-color: var(--border-strong);
+  min-width: 20px;
+>>>>>>> main
 }

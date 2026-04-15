@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 server/
 node_modules/
 client/node_modules/
 .next/
 client/.next/
 .env
+=======
+node_modules/
+.next/
+.env
+dist/
+>>>>>>> main
