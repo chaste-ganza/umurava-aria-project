@@ -2,6 +2,6 @@ node_modules/
 client/node_modules/
 .next/
 client/.next/
-.env
 server/dist
 
+config.bat
